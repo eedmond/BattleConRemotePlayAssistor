@@ -8,17 +8,9 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid.Resources>
-            <Style TargetType="Polygon" x:Key="BoardSpace">
-                <Setter Property="Fill" Value="White"/>
-                <Setter Property="Stroke" Value="Black"/>
-                <Setter Property="StrokeThickness" Value="4"/>
-                <Setter Property="Points" Value="0, 0, -87, 50, -87, 150, 0, 200, 87, 150, 87, 50"/>
-            </Style>
-        </Grid.Resources>
         <TextBlock FontSize="42" HorizontalAlignment="Center">Battle Page</TextBlock>
         <RelativePanel BorderBrush="Gray" BorderThickness="10" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1000" Height="400">
-            <!--<Polygon x:Name="CenterTile" Style="{StaticResource BoardSpace}" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True"></Polygon>-->
+            <Polygon x:Name="CenterTile" Style="{StaticResource BoardSpace}" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True"></Polygon>
             <Polygon x:Name="Tile1" Style="{StaticResource BoardSpace}"  RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True"></Polygon>
         </RelativePanel>
     </Grid>
