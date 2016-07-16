@@ -30,6 +30,7 @@ namespace BattleConAssistor
         private void StartMatch_Button_Click(object sender, RoutedEventArgs e)
         {
             Frame currentFrame = Window.Current.Content as Frame;
+            currentFrame.Navigate(typeof(BattlePage));
         }
     }
 }
