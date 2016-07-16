@@ -26,5 +26,10 @@ namespace BattleConAssistor
         {
             this.InitializeComponent();
         }
+
+        private void StartMatch_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Frame currentFrame = Window.Current.Content as Frame;
+        }
     }
 }
