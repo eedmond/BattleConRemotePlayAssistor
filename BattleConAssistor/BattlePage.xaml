@@ -8,10 +8,28 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock FontSize="42" HorizontalAlignment="Center">Battle Page</TextBlock>
-        <RelativePanel BorderBrush="Gray" BorderThickness="10" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1000" Height="400">
-            <Polygon x:Name="CenterTile" Style="{StaticResource BoardSpace}" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True"></Polygon>
-            <Polygon x:Name="Tile1" Style="{StaticResource BoardSpace}"  RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True"></Polygon>
-        </RelativePanel>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="1" FontSize="42" HorizontalAlignment="Center">Battle Page</TextBlock>
+        <!--<RelativePanel BorderBrush="Gray" BorderThickness="10" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1000" Height="400">-->
+            <!--<Polygon x:Name="CenterTile" Style="{StaticResource BoardSpace}" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True"></Polygon>-->
+            <!--<Polygon x:Name="Tile1" Style="{StaticResource BoardSpace}" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True"></Polygon>-->
+        <!--</RelativePanel>-->
+        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal">
+            <local:GameTile/>
+            <local:GameTile/>
+            <local:GameTile/>
+            <local:GameTile/>
+            <local:GameTile/>
+            <local:GameTile/>
+            <local:GameTile/>
+        </StackPanel>
     </Grid>
 </Page>

@@ -4,13 +4,4 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:BattleConAssistor"
     RequestedTheme="Dark">
-    <Application.Resources>
-        <Style TargetType="Polygon" x:Key="BoardSpace">
-            <Setter Property="Fill" Value="White"/>
-            <Setter Property="Stroke" Value="Black"/>
-            <Setter Property="StrokeThickness" Value="4"/>
-            <Setter Property="Points" Value="0, 0, -87, 50, -87, 150, 0, 200, 87, 150, 87, 50"/>
-        </Style>
-    </Application.Resources>
-
 </Application>
